@@ -325,6 +325,8 @@ you should place your code here."
        web-mode-markup-indent-offset 2
        web-mode-scss-indent-offset 2
        css-indent-offset 2)
+  (define-key winum-keymap (kbd "M-3") nil)
+  (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
