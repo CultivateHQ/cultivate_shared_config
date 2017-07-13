@@ -331,7 +331,8 @@ you should place your code here."
   (define-key winum-keymap (kbd "M-3") nil)
   (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
   )
-
+;;; Prevent helm from prompting when finding a new file
+(setq helm-ff-newfile-prompt-p nil)
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (defun dotspacemacs/emacs-custom-settings ()
