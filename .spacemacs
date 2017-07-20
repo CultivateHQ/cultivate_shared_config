@@ -40,6 +40,7 @@ values."
      yaml
      html
      javascript
+     react
      sql
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
