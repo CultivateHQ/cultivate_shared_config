@@ -331,6 +331,7 @@ you should place your code here."
        css-indent-offset 2)
   (define-key winum-keymap (kbd "M-3") nil)
   (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
+  (define-key winum-keymap (kbd "C-q") 'holy-mode)
   )
 ;;; Prevent helm from prompting when finding a new file
 (setq helm-ff-newfile-prompt-p nil)
