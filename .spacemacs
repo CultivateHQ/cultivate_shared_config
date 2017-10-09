@@ -52,7 +52,7 @@ values."
      ;; auto-completion
      ;; better-defaults
      emacs-lisp
-     ;; git
+     git
      ;; markdown
      ;; org
      ;; (shell :variables
@@ -333,6 +333,7 @@ you should place your code here."
        css-indent-offset 2)
   (define-key winum-keymap (kbd "M-3") nil)
   (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
+  (global-set-key (kbd "C-x g") 'magit-status)
   (define-key winum-keymap (kbd "C-q") 'holy-mode)
   )
 ;;; Prevent helm from prompting when finding a new file

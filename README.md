@@ -2,10 +2,17 @@
 
 ## Spacemacs
 
-Custom keybindings:
+### Custom keybindings:
 - `C-q` toggle `holy-mode` - makes it easier to switch between Emacs and Vim modes.
+- `C-x g` run `magit-status`
 
-*Tip*: If you edit your `.spacemacs` file and want to reload it without restarting Spacemacs, use `SPC f e R` in vim mode or `M-m f e R` in emacs mode.
+### Useful keybindings
+To use these shortcuts, press `Space` in Vim mode and `M-m` (Alt-m) in Emacs mode followed by the key combination:
+
+| *Description* | *Keys* |
+| ------------- | ------ |
+| Toggle neotree | `p t` |
+| Reload `.spacemacs` file | `f e R` |
 
 ## Tmux
 
