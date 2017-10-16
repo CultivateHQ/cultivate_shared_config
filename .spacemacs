@@ -337,8 +337,8 @@ you should place your code here."
   (global-set-key (kbd "C-x g") 'magit-status)
   (define-key winum-keymap (kbd "C-q") 'holy-mode)
   (add-hook 'magit-mode-hook 'visual-line-mode)
-  (when (file-exists-p "~/personal-config.el")
-    (load-file "~/personal-config.el")
+  (when (file-exists-p "~/.personal-config.el")
+    (load-file "~/.personal-config.el")
     )
   )
 ;;; Prevent helm from prompting when finding a new file
