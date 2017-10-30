@@ -61,6 +61,7 @@ values."
      ;; spell-checking
      syntax-checking
      version-control
+     personal-config
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -337,9 +338,6 @@ you should place your code here."
   (global-set-key (kbd "C-x g") 'magit-status)
   (define-key winum-keymap (kbd "C-q") 'holy-mode)
   (add-hook 'magit-mode-hook 'visual-line-mode)
-  (when (file-exists-p "~/.personal-config.el")
-    (load-file "~/.personal-config.el")
-    )
   )
 ;;; Prevent helm from prompting when finding a new file
 (setq helm-ff-newfile-prompt-p nil)
