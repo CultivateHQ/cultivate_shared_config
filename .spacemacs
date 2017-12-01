@@ -335,6 +335,8 @@ you should place your code here."
        css-indent-offset 2
        ruby-insert-encoding-magic-comment nil
        enh-ruby-add-encoding-comment-on-save nil
+       js2-mode-show-parse-errors nil
+       js2-mode-show-strict-warnings nil
        )
   (define-key winum-keymap (kbd "M-3") nil)
   (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
