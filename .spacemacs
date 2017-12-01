@@ -335,6 +335,9 @@ you should place your code here."
        css-indent-offset 2
        ruby-insert-encoding-magic-comment nil
        enh-ruby-add-encoding-comment-on-save nil
+       js-indent-level 2
+       js2-basic-offset 2
+       js2-indent-switch-body t
        js2-mode-show-parse-errors nil
        js2-mode-show-strict-warnings nil
        )
