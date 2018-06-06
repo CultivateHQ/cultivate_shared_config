@@ -28,3 +28,25 @@ Custom keybindings:
 - `C-a` is used as the prefix instead of the default `C-b`
 - `C-a C--` split horizontally
 - `C-a C-|` split vertically
+
+
+## Neovim
+
+Yeah yeah I know, this isn't Spacemacs. However I'm sure there is room in this world for both options ❤️
+
+If you'd like to use neovim then you can do the following to get started:
+
+```
+brew install neovim
+```
+
+On Mac OS X (and also Linux I suspect) you'll want to create a `~/.config/nvim` folder and symlink `init.vim` from this repo into it. You can also copy paste `custom_color.vim` and `custom_plugins.vim` if you want a starter kit.
+
+We're using [vim-plug](https://github.com/junegunn/vim-plug) for plugin management. Head to that link and download the `plug.vim` file. Put it in a folder called `~/.config/nvim/autoload`.
+
+Now open neovim using the command `nvim` in the root folder of your project. You'll see some errors first time as we've not installed anything yet. Once neovim opens type `:PlugInstall` and hit return to install the plugins listed in `init.vim` (and `custom_plugins.vim` if you took that too).
+
+If you want to use the fuzzy finder you'll also need to install [fzf](https://github.com/junegunn/fzf).
+
+There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎
+
