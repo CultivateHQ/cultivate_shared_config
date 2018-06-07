@@ -48,9 +48,12 @@ We're using [vim-plug](https://github.com/junegunn/vim-plug) for plugin manageme
 
 Now open neovim using the command `nvim` in the root folder of your project. You'll see some errors first time as we've not installed anything yet. Once neovim opens type `:PlugInstall` and hit return to install the plugins listed in `init.vim` (and `custom_plugins.vim` if you took that too).
 
-If you want to use the fuzzy finder you'll also need to install [fzf](https://github.com/junegunn/fzf).
+### Extras
 
-There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎
+If you want to use the fuzzy finder (`<leader>f`) you'll also need to install [fzf](https://github.com/junegunn/fzf).
+
+If you want to use the alt file finder (`<leader>.`) you'll also need to install [alt](https://github.com/uptech/alt).
+
 
 ### Philosophy
 
@@ -60,4 +63,5 @@ I've split the config out into several files to allow it to be pretty customisab
 1. `custom_color.vim` is where you can put your desired colorscheme. If it needs a plugin then add that to `custom_plugins.vim` so that it gets added to the right part of the config file.
 1. `custom_overrides.vim` (not included) is where you can override anything else in the standard file if you so desire. Caution though, the further you get from the standard setup, the harder it will be for others to pair with you.
 1. `custom_plugins.vim` is for adding any plugins that you'd like to use that are not yet canon in the company.
+1. There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎 
 
