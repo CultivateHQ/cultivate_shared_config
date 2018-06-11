@@ -1,0 +1,3 @@
+" Set colorscheme
+colorscheme lunarized
+

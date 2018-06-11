@@ -1,0 +1,6 @@
+"test using zeus in this project
+nmap <leader>tf :!zeus test %<CR>
+nmap <leader>ta :!zeus test<CR>
+
+"don't highlight Rubocop errors in this project
+let g:ale_set_highlights = 0
