@@ -9,10 +9,14 @@
 ### Useful keybindings
 To use these shortcuts, press `Space` in Vim mode and `M-m` (Alt-m) in Emacs mode followed by the key combination:
 
-| *Description* | *Keys* |
-| ------------- | ------ |
-| Toggle neotree | `p t` |
+| *Description*            | *Keys*  |
+| -------------            | ------  |
+| Toggle neotree           | `p t`   |
 | Reload `.spacemacs` file | `f e R` |
+
+### Copying to system clipboard from `emacs -nw` in tmux/tmate
+
+When running Spacemacs in the terminal inside a tmux/tmate session, the system clipboard is not available as usual. The [`xclipboard` layer](https://github.com/syl20bnr/spacemacs/tree/develop/layers/%2Btools/xclipboard) is included for those using the `develop` branch of Spacemacs. This way you can select text and copy it to the system's clipboard with `x y` and paste it from the system clipboard to Spacemacs with `x p` (prefixed by the special command `SPC` in Vim mode and `alt-m` in Emacs mode).
 
 ### Custom configuration file
 
