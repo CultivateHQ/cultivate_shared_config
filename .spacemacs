@@ -30,7 +30,7 @@ values."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(
+   '(rust
      elixir
      markdown
      elm
@@ -62,6 +62,7 @@ values."
      syntax-checking
      version-control
      personal-config
+     xclipboard
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -340,6 +341,7 @@ you should place your code here."
        js2-indent-switch-body t
        js2-mode-show-parse-errors nil
        js2-mode-show-strict-warnings nil
+       editorconfig-mode 1
        )
   (define-key winum-keymap (kbd "M-3") nil)
   (global-set-key (kbd "M-3") (lambda () (interactive) (insert "#")))
