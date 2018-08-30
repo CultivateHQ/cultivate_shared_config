@@ -32,11 +32,17 @@ The `javascript` layer is enabled by default. But we've disabled its error check
 
 ## Tmux
 
-Custom keybindings:
-- `C-a` is used as the prefix instead of the default `C-b`
-- `C-a C--` split horizontally
-- `C-a C-|` split vertically
+Keybindings:
 
+**`Ctrl a`** is used as the prefix, instead of the default `Ctrl b`.
+
+| Keys                       | Action                         |
+|----------------------------|--------------------------------|
+| `PREFIX -`                 | split horizontally             |
+| <code>PREFIX &#124;</code> | split vertically               |
+| `PREFIX :`                 | run tmux command               |
+| `PREFIX +`                 | promote pane to its own window |
+| `PREFIX r`                 | reload configuration           |
 
 ## Neovim
 
@@ -71,5 +77,4 @@ I've split the config out into several files to allow it to be pretty customisab
 1. `custom_color.vim` is where you can put your desired colorscheme. If it needs a plugin then add that to `custom_plugins.vim` so that it gets added to the right part of the config file.
 1. `custom_overrides.vim` (not included) is where you can override anything else in the standard file if you so desire. Caution though, the further you get from the standard setup, the harder it will be for others to pair with you.
 1. `custom_plugins.vim` is for adding any plugins that you'd like to use that are not yet canon in the company.
-1. There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎 
-
+1. There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎
