@@ -5,7 +5,11 @@
 Plug 'https://github.com/aclissold/lunarized-syntax'
 
 " tools
+Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'posva/vim-vue'
+Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 
 
@@ -24,11 +28,16 @@ endfunction
 " Plugin options
 " ==============
 
+" ALE
+" ---
+
 " to save battery life we don't want to lint as we type
 " (ALE will lint on save by default)
 let g:ale_lint_on_text_changed = 'never'
 
-" Lightline options
+" Lightline
+" ---------
+
 let g:lightline = {
     \ 'colorscheme': 'wombat',
     \ 'active': {
@@ -40,4 +49,10 @@ let g:lightline = {
     \   'gitgutter': 'LightLineGitGutter',
     \ },
     \ }
+
+" NERDTree
+" --------
+
+" show hidden files by default
+let NERDTreeShowHidden = 1
 
