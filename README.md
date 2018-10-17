@@ -81,9 +81,9 @@ I've split the config out into several files to allow it to be pretty customisab
 
 ## editorconfig
 
-We have a default .editorconfig file that we can use for default ediitor options across editor that we use.
+We have a default .editorconfig file that we can use for default editor options across editor that we use.
 
-See <https://editorconfg.org> for more details.
+See <https://editorconfig.org> for more details.
 
 To use symlink to the top-level folder that needs to use it (i.e your home directory or the client/project directory.
 
