@@ -9,6 +9,7 @@ Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'posva/vim-vue'
+Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 
@@ -55,4 +56,17 @@ let g:lightline = {
 
 " show hidden files by default
 let NERDTreeShowHidden = 1
+
+" Pencil
+" ------
+
+" set default wrapping mode in pencil to soft
+let g:pencil#wrapModeDefault = 'soft'
+
+" Initialize pencil when working with prose files
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
 
