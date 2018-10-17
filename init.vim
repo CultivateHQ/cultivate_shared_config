@@ -37,6 +37,8 @@ nmap <leader>f :FZF<CR>
 "toggle code folding
 nmap <leader>l za
 
+nmap <leader>r :so ~/.config/nvim/init.vim<CR>
+
 "run tests in the current file (or last file if not in a test file)
 nmap <leader>tf :TestFile<CR>
 "run the whole test suite
