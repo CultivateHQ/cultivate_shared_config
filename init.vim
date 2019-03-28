@@ -98,6 +98,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Custom
 call SourceIfExists("~/.config/nvim/custom_plugins.vim")
