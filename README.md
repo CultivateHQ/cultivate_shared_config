@@ -78,3 +78,12 @@ I've split the config out into several files to allow it to be pretty customisab
 1. `custom_overrides.vim` (not included) is where you can override anything else in the standard file if you so desire. Caution though, the further you get from the standard setup, the harder it will be for others to pair with you.
 1. `custom_plugins.vim` is for adding any plugins that you'd like to use that are not yet canon in the company.
 1. There's also a sample project specific `.nvimrc` file included in this repo so that you can see how to override things at a project level. Add it to the root of your project, fill out the desired overrides and enjoy. 😎
+
+## editorconfig
+
+We have a default .editorconfig file that we can use for default editor options across editor that we use.
+
+See <https://editorconfig.org> for more details.
+
+To use symlink to the top-level folder that needs to use it (i.e your home directory or the client/project directory.
+
