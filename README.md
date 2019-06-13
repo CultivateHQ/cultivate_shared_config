@@ -1,5 +1,16 @@
 # Cultivate Shared Config
 
+- [Spacemacs](#spacemacs)
+  - [Custom keybindings](#custom-keybindings)
+  - [Useful keybindings](#useful-keybindings)
+  - [Copying to system clipboard from emacs-nw in tmux/tmate](#copying-to-system-clipboard-from-emacs--nw-in-tmuxtmate)
+  - [Custom configuration file](#custom-configuration-file)
+  - [Magit](#magit)
+  - [JavaScript development](#javascript-development)
+- [Tmux](#tmux)
+- [Neovim](#neovim)
+- [editorconfig](#editorconfig)
+
 ## Spacemacs
 
 ### Custom keybindings:
