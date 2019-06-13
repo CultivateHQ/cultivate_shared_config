@@ -8,7 +8,12 @@ Plug 'https://github.com/aclissold/lunarized-syntax'
 Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'junegunn/goyo.vim'
 Plug 'posva/vim-vue'
+Plug 'reedes/vim-lexical'
+Plug 'reedes/vim-pencil'
+Plug 'reedes/vim-colors-pencil'
+Plug 'reedes/vim-wheel'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 
@@ -55,4 +60,20 @@ let g:lightline = {
 
 " show hidden files by default
 let NERDTreeShowHidden = 1
+
+
+" WRITING
+" =======
+
+" Pencil
+" ------
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+                            \ | call lexical#init()
+augroup END
+
+let g:markdown_syntax_conceal = 0
+let g:pencil#conceallevel = 0
 
