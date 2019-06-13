@@ -35,6 +35,7 @@ The `javascript` layer is enabled by default. But we've disabled its error check
 Keybindings:
 
 **`Ctrl a`** is used as the prefix, instead of the default `Ctrl b`.
+Mouse scrolling is enabled, so you need to use `Shift + Click` to select text (for copy/pasting) while using tmux.
 
 | Keys                       | Action                         |
 |----------------------------|--------------------------------|
@@ -86,4 +87,3 @@ We have a default .editorconfig file that we can use for default editor options 
 See <https://editorconfig.org> for more details.
 
 To use symlink to the top-level folder that needs to use it (i.e your home directory or the client/project directory.
-
